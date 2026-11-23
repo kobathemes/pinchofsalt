@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · Pinch of Salt</title>
+<meta name="description" content="Say hello, ask a recipe question, or get in touch about working together.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css?v=caf6a4d9">
+</head>
+<body class="page-contact">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Announcement bar (optional, switch on or off) -->
+<div class="announce">
+  <p>New here? Start with the <a href="recipes.html">5 recipes readers cook most</a></p>
+</div>
+
+<!-- Top navigation -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__left">
+      <button class="icon-btn nav__burger" id="menuOpen" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <button class="icon-btn" id="searchOpen" aria-label="Search recipes">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+      </button>
+    </div>
+
+    <a class="nav__mini-logo" href="index.html" aria-label="Pinch of Salt home">Pinch of Salt</a>
+
+    <nav class="menu" id="menu" aria-label="Main menu">
+      <button class="icon-btn menu__close" id="menuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-sub">
+          <a href="recipes.html">Recipes <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
+          <ul class="sub">
+            <li><a href="recipes.html?cat=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?cat=mains">Mains</a></li>
+            <li><a href="recipes.html?cat=baking">Baking</a></li>
+            <li><a href="recipes.html">Recipe index</a></li>
+          </ul>
+        </li>
+        <li><a href="recipes.html?cat=lunch">Quick Lunch</a></li>
+        <li><a href="recipes.html?cat=desserts">Desserts</a></li>
+        <li><a href="recipes.html?cat=drinks">Drinks</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="menu__only-mobile"><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__right">
+      <a class="icon-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 20.5 12.2 11M9.3 13.2c-1-2.7.6-5.2 3.2-5.2 2.3 0 3.7 1.8 3.2 4-.5 2.2-2.3 3.3-3.9 2.3"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="m10.5 9.5 4 2.5-4 2.5z" fill="currentColor"/></svg></a>
+      <a class="icon-btn nav__mail" href="#newsletter" aria-label="Newsletter"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<!-- Search overlay -->
+<div class="search" id="search" hidden>
+  <form class="search__box" role="search" action="recipes.html" method="get">
+    <label class="eyebrow" for="searchInput">What are you hungry for?</label>
+    <div class="search__row">
+      <input id="searchInput" name="q" type="search" placeholder="pancakes, pasta, something sweet" autocomplete="off">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+    </div>
+    <ul class="search__tags">
+      <li><a href="recipes.html?time=30">30 minute dinners</a></li>
+      <li><a href="recipes.html?cat=breakfast">breakfast</a></li>
+      <li><a href="recipes.html?cat=baking">baking</a></li>
+      <li><a href="recipes.html?cat=drinks">drinks</a></li>
+      <li><a href="recipes.html?cat=desserts">something sweet</a></li>
+    </ul>
+  </form>
+</div>
+
+<!-- Logo band -->
+<div class="brand brand--small">
+  <a class="brand__logo" href="index.html">Pinch of Salt</a>
+  <p class="brand__tag">simple food, a little bit fancy</p>
+</div>
+
+<main id="main">
+
+  <header class="page-head container">
+    <p class="eyebrow">Contact</p>
+    <h1>Say <em>hello</em></h1>
+    <p class="lede">A recipe question, a kind word, or an idea for working together. I read everything and reply within two working days.</p>
+  </header>
+
+  <section class="container contact">
+    <form class="form" action="#" data-thanks="Thank you. Your message is on its way and I will reply within two working days.">
+      <div class="form__row">
+        <p><label for="fName">Your name</label><input id="fName" type="text" autocomplete="name" required></p>
+        <p><label for="fEmail">Your email</label><input id="fEmail" type="email" autocomplete="email" required></p>
+      </div>
+      <p>
+        <label for="fTopic">What is it about?</label>
+        <select id="fTopic">
+          <option>A recipe question</option>
+          <option>Working together</option>
+          <option>Press and features</option>
+          <option>Something else</option>
+        </select>
+      </p>
+      <p><label for="fMsg">Your message</label><textarea id="fMsg" rows="7" required></textarea></p>
+      <button class="btn" type="submit">Send message</button>
+    </form>
+
+    <aside class="contact__side">
+      <div class="note">
+        <p class="kicker">Work with me</p>
+        <p>I take on a small number of brand partnerships each year, for products I already use in my own kitchen.</p>
+        <p><a class="link" href="#">Download the media kit <span aria-hidden="true">→</span></a></p>
+      </div>
+      <dl class="contact__list">
+        <div><dt class="eyebrow">Email</dt><dd>hello@pinchofsalt.example</dd></div>
+        <div><dt class="eyebrow">Based in</dt><dd>Copenhagen, Denmark</dd></div>
+        <div><dt class="eyebrow">Follow</dt><dd><a href="#">Instagram</a>, <a href="#">Pinterest</a>, <a href="#">YouTube</a></dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section class="container faq" aria-labelledby="faqTitle">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Before you write</p>
+        <h2 class="title" id="faqTitle">Quick <em>answers</em></h2>
+      </div>
+    </div>
+    <div class="faq__list">
+      <details open>
+        <summary>A recipe did not work. Can you help?</summary>
+        <p>Yes. Leave a comment on the recipe and tell me what happened, with your oven type if it is a bake. I answer comments faster than email, and your question helps the next cook too.</p>
+      </details>
+      <details>
+        <summary>Can I share your recipes on my own site?</summary>
+        <p>You are welcome to share one photo with a link back to the recipe. Please do not copy the full recipe text or the method.</p>
+      </details>
+      <details>
+        <summary>Do you take sponsored posts?</summary>
+        <p>A few each year, and only for products I already use. Choose "Working together" in the form and tell me a little about the brand.</p>
+      </details>
+      <details>
+        <summary>Where do I find my shop downloads?</summary>
+        <p>Your download link arrives by email right after you pay. If it has not shown up within ten minutes, check your spam folder, then write to me here.</p>
+      </details>
+    </div>
+  </section>
+
+    <!-- Newsletter -->
+  <section class="news news--ink" id="newsletter" aria-labelledby="newsTitle">
+    <div class="container news__inner">
+      <p class="kicker">A little something for Sunday</p>
+      <h2 class="title" id="newsTitle">One new recipe a week. <em>That's it.</em></h2>
+      <p>Join 12,000 home cooks. You get one tested recipe every Sunday morning, plus the shopping list.</p>
+      <form class="news__form" action="#" data-thanks="You're in. See you on Sunday.">
+        <label class="sr-only" for="email">Your email</label>
+        <input id="email" type="email" placeholder="your email" required>
+        <button class="btn" type="submit">Send me recipes</button>
+      </form>
+      <small>No spam. Unsubscribe any time.</small>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="foot">
+  <div class="container foot__inner">
+    <div class="foot__brand">
+      <a class="foot__logo" href="index.html">Pinch of Salt</a>
+      <p>Simple food, a little bit fancy. Tested in a small kitchen and written for busy people.</p>
+    </div>
+    <nav aria-label="Recipes">
+      <h2 class="eyebrow">Recipes</h2>
+      <ul><li><a href="recipes.html?cat=mains">Mains</a></li><li><a href="recipes.html?cat=lunch">Quick Lunch</a></li><li><a href="recipes.html?cat=desserts">Desserts</a></li><li><a href="recipes.html?cat=drinks">Drinks</a></li></ul>
+    </nav>
+    <nav aria-label="About">
+      <h2 class="eyebrow">About</h2>
+      <ul><li><a href="about.html">My story</a></li><li><a href="contact.html">Work with me</a></li><li><a href="contact.html">Contact</a></li><li><a href="shop.html">Shop</a></li></ul>
+    </nav>
+    <nav aria-label="Follow">
+      <h2 class="eyebrow">Follow</h2>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li><li><a href="#">YouTube</a></li><li><a href="#newsletter">Newsletter</a></li></ul>
+    </nav>
+  </div>
+  <div class="container foot__base">
+    <p>© 2026 Pinch of Salt. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=caf6a4d9"></script>
+</body>
+</html>

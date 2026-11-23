@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recipe index · Pinch of Salt</title>
+<meta name="description" content="Every recipe on Pinch of Salt. Filter by meal, by time, or search for what you have in the fridge.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css?v=caf6a4d9">
+</head>
+<body class="page-recipes">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Announcement bar (optional, switch on or off) -->
+<div class="announce">
+  <p>New here? Start with the <a href="recipes.html">5 recipes readers cook most</a></p>
+</div>
+
+<!-- Top navigation -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__left">
+      <button class="icon-btn nav__burger" id="menuOpen" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <button class="icon-btn" id="searchOpen" aria-label="Search recipes">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+      </button>
+    </div>
+
+    <a class="nav__mini-logo" href="index.html" aria-label="Pinch of Salt home">Pinch of Salt</a>
+
+    <nav class="menu" id="menu" aria-label="Main menu">
+      <button class="icon-btn menu__close" id="menuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-sub">
+          <a href="recipes.html" aria-current="page">Recipes <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
+          <ul class="sub">
+            <li><a href="recipes.html?cat=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?cat=mains">Mains</a></li>
+            <li><a href="recipes.html?cat=baking">Baking</a></li>
+            <li><a href="recipes.html">Recipe index</a></li>
+          </ul>
+        </li>
+        <li><a href="recipes.html?cat=lunch">Quick Lunch</a></li>
+        <li><a href="recipes.html?cat=desserts">Desserts</a></li>
+        <li><a href="recipes.html?cat=drinks">Drinks</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="menu__only-mobile"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__right">
+      <a class="icon-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 20.5 12.2 11M9.3 13.2c-1-2.7.6-5.2 3.2-5.2 2.3 0 3.7 1.8 3.2 4-.5 2.2-2.3 3.3-3.9 2.3"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="m10.5 9.5 4 2.5-4 2.5z" fill="currentColor"/></svg></a>
+      <a class="icon-btn nav__mail" href="#newsletter" aria-label="Newsletter"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<!-- Search overlay -->
+<div class="search" id="search" hidden>
+  <form class="search__box" role="search" action="recipes.html" method="get">
+    <label class="eyebrow" for="searchInput">What are you hungry for?</label>
+    <div class="search__row">
+      <input id="searchInput" name="q" type="search" placeholder="pancakes, pasta, something sweet" autocomplete="off">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+    </div>
+    <ul class="search__tags">
+      <li><a href="recipes.html?time=30">30 minute dinners</a></li>
+      <li><a href="recipes.html?cat=breakfast">breakfast</a></li>
+      <li><a href="recipes.html?cat=baking">baking</a></li>
+      <li><a href="recipes.html?cat=drinks">drinks</a></li>
+      <li><a href="recipes.html?cat=desserts">something sweet</a></li>
+    </ul>
+  </form>
+</div>
+
+<!-- Logo band -->
+<div class="brand brand--small">
+  <a class="brand__logo" href="index.html">Pinch of Salt</a>
+  <p class="brand__tag">simple food, a little bit fancy</p>
+</div>
+
+<main id="main">
+
+  <header class="page-head container">
+    <p class="eyebrow">Recipe index</p>
+    <h1>All the <em>recipes</em></h1>
+    <p class="lede">Filter by meal, by how much time you have, or search for what is in your fridge.</p>
+  </header>
+
+  <section class="container index" aria-label="Recipes">
+    <div class="index__tools">
+      <div class="filters" role="group" aria-label="Filter by meal" id="indexCats">
+        <button class="is-active" data-cat="all">All</button>
+        <button data-cat="breakfast">Breakfast</button>
+        <button data-cat="mains">Mains</button>
+        <button data-cat="lunch">Quick Lunch</button>
+        <button data-cat="desserts">Desserts</button>
+        <button data-cat="drinks">Drinks</button>
+        <button data-cat="baking">Baking</button>
+      </div>
+      <div class="index__fields">
+        <label class="field field--search">
+          <span class="sr-only">Search recipes</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+          <input id="indexSearch" type="search" placeholder="search recipes">
+        </label>
+        <label class="field">
+          <span class="sr-only">Time</span>
+          <select id="indexTime">
+            <option value="0">Any time</option>
+            <option value="15">15 minutes or less</option>
+            <option value="30">30 minutes or less</option>
+            <option value="60">1 hour or less</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <p class="index__count" id="indexCount" aria-live="polite">16 recipes</p>
+
+    <div class="grid grid--4" id="indexGrid">
+      <article class="card" data-cat="breakfast" data-time="20">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&h=1000&q=75" alt="Stack of pancakes with blueberries and banana" width="800" height="1000" loading="lazy"><span class="card__time">20 min</span></a>
+  <p class="card__cat">Breakfast</p>
+  <h3><a href="recipe.html">Blueberry Banana Pancakes</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(128)</span></p>
+</article>
+<article class="card" data-cat="lunch" data-time="15">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=1000&q=75" alt="Colourful salad bowl with avocado and chickpeas" width="800" height="1000" loading="lazy"><span class="card__time">15 min</span></a>
+  <p class="card__cat">Quick Lunch</p>
+  <h3><a href="recipe.html">Rainbow Crunch Salad Bowl</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(96)</span></p>
+</article>
+<article class="card" data-cat="mains" data-time="35">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&h=1000&q=75" alt="Sliced pizza on a wooden board" width="800" height="1000" loading="lazy"><span class="card__time">35 min</span></a>
+  <p class="card__cat">Mains</p>
+  <h3><a href="recipe.html">Friday Night Skillet Pizza</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(214)</span></p>
+</article>
+<article class="card" data-cat="baking" data-time="25">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&h=1000&q=75" alt="Chocolate chip cookies on baking paper" width="800" height="1000" loading="lazy"><span class="card__time">25 min</span></a>
+  <p class="card__cat">Baking</p>
+  <h3><a href="recipe.html">Brown Butter Chocolate Chip Cookies</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 5.0 out of 5">★★★★★</span> 5.0 <span class="muted">(302)</span></p>
+</article>
+<article class="card" data-cat="mains" data-time="30">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&h=1000&q=75" alt="Grilled skewers on a tray with dips" width="800" height="1000" loading="lazy"><span class="card__time">30 min</span></a>
+  <p class="card__cat">Mains</p>
+  <h3><a href="recipe.html">Smoky Grilled Chicken Skewers</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.7 out of 5">★★★★★</span> 4.7 <span class="muted">(74)</span></p>
+</article>
+<article class="card" data-cat="desserts" data-time="15">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&h=1000&q=75" alt="Jars of panna cotta topped with strawberries" width="800" height="1000" loading="lazy"><span class="card__time">15 min + chill</span></a>
+  <p class="card__cat">Desserts</p>
+  <h3><a href="recipe.html">Strawberry Vanilla Panna Cotta</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(59)</span></p>
+</article>
+<article class="card" data-cat="desserts" data-time="70">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=800&h=1000&q=75" alt="Lemon meringue tart with a slice taken out" width="800" height="1000" loading="lazy"><span class="card__time">1 hr 10 min</span></a>
+  <p class="card__cat">Desserts</p>
+  <h3><a href="recipe.html">Lemon Meringue Tart for Slow Sundays</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(88)</span></p>
+</article>
+<article class="card" data-cat="drinks" data-time="10">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=800&h=1000&q=75" alt="Three glasses of strawberry lemonade with lime" width="800" height="1000" loading="lazy"><span class="card__time">10 min</span></a>
+  <p class="card__cat">Drinks</p>
+  <h3><a href="recipe.html">Strawberry Basil Lemonade</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(41)</span></p>
+</article>
+<article class="card" data-cat="mains" data-time="25">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=800&h=1000&q=75" alt="A pan of tagliatelle with herbs" width="800" height="1000" loading="lazy"><span class="card__time">25 min</span></a>
+  <p class="card__cat">Mains</p>
+  <h3><a href="recipe.html">Brown Butter Tagliatelle</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(167)</span></p>
+</article>
+<article class="card" data-cat="lunch" data-time="20">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=800&h=1000&q=75" alt="Bowl of farfalle pasta salad" width="800" height="1000" loading="lazy"><span class="card__time">20 min</span></a>
+  <p class="card__cat">Quick Lunch</p>
+  <h3><a href="recipe.html">Sun Dried Tomato Pasta Salad</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.7 out of 5">★★★★★</span> 4.7 <span class="muted">(112)</span></p>
+</article>
+<article class="card" data-cat="breakfast" data-time="15">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=800&h=1000&q=75" alt="Bowl with soft eggs, avocado and radish" width="800" height="1000" loading="lazy"><span class="card__time">15 min</span></a>
+  <p class="card__cat">Breakfast</p>
+  <h3><a href="recipe.html">Soft Egg and Avocado Bowl</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(83)</span></p>
+</article>
+<article class="card" data-cat="baking" data-time="180">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&h=1000&q=75" alt="Rustic loaves of dark bread" width="800" height="1000" loading="lazy"><span class="card__time">3 hr</span></a>
+  <p class="card__cat">Baking</p>
+  <h3><a href="recipe.html">Seeded Rye Loaf</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.6 out of 5">★★★★★</span> 4.6 <span class="muted">(37)</span></p>
+</article>
+<article class="card" data-cat="mains" data-time="25">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=800&h=1000&q=75" alt="A stacked burger on a white plate" width="800" height="1000" loading="lazy"><span class="card__time">25 min</span></a>
+  <p class="card__cat">Mains</p>
+  <h3><a href="recipe.html">Weeknight Smash Burger</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(190)</span></p>
+</article>
+<article class="card" data-cat="desserts" data-time="90">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&h=1000&q=75" alt="A slice of layer cake with raspberries" width="800" height="1000" loading="lazy"><span class="card__time">1 hr 30 min</span></a>
+  <p class="card__cat">Desserts</p>
+  <h3><a href="recipe.html">Raspberry Vanilla Layer Cake</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(65)</span></p>
+</article>
+<article class="card" data-cat="drinks" data-time="5">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=800&h=1000&q=75" alt="A tall glass with mint and lime" width="800" height="1000" loading="lazy"><span class="card__time">5 min</span></a>
+  <p class="card__cat">Drinks</p>
+  <h3><a href="recipe.html">Cucumber Mint Cooler</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.7 out of 5">★★★★★</span> 4.7 <span class="muted">(29)</span></p>
+</article>
+<article class="card" data-cat="breakfast" data-time="20">
+  <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=800&h=1000&q=75" alt="French toast stacked with berries and banana" width="800" height="1000" loading="lazy"><span class="card__time">20 min</span></a>
+  <p class="card__cat">Breakfast</p>
+  <h3><a href="recipe.html">Berries and Cream French Toast</a></h3>
+  <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(141)</span></p>
+</article>
+    </div>
+
+    <div class="index__empty" id="indexEmpty" hidden>
+      <p class="kicker">Nothing here yet</p>
+      <p>No recipe matches that. Try fewer filters or a different word.</p>
+      <button class="btn btn--ghost" type="button" id="indexReset">Clear filters</button>
+    </div>
+
+    <nav class="pager" aria-label="Pages">
+      <span class="is-current" aria-current="page">1</span>
+      <a href="#">2</a>
+      <a href="#">3</a>
+      <span class="pager__gap" aria-hidden="true">…</span>
+      <a href="#">8</a>
+      <a class="pager__next" href="#">Next <span aria-hidden="true">→</span></a>
+    </nav>
+  </section>
+
+    <!-- Newsletter -->
+  <section class="news news--ink" id="newsletter" aria-labelledby="newsTitle">
+    <div class="container news__inner">
+      <p class="kicker">A little something for Sunday</p>
+      <h2 class="title" id="newsTitle">One new recipe a week. <em>That's it.</em></h2>
+      <p>Join 12,000 home cooks. You get one tested recipe every Sunday morning, plus the shopping list.</p>
+      <form class="news__form" action="#" data-thanks="You're in. See you on Sunday.">
+        <label class="sr-only" for="email">Your email</label>
+        <input id="email" type="email" placeholder="your email" required>
+        <button class="btn" type="submit">Send me recipes</button>
+      </form>
+      <small>No spam. Unsubscribe any time.</small>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="foot">
+  <div class="container foot__inner">
+    <div class="foot__brand">
+      <a class="foot__logo" href="index.html">Pinch of Salt</a>
+      <p>Simple food, a little bit fancy. Tested in a small kitchen and written for busy people.</p>
+    </div>
+    <nav aria-label="Recipes">
+      <h2 class="eyebrow">Recipes</h2>
+      <ul><li><a href="recipes.html?cat=mains">Mains</a></li><li><a href="recipes.html?cat=lunch">Quick Lunch</a></li><li><a href="recipes.html?cat=desserts">Desserts</a></li><li><a href="recipes.html?cat=drinks">Drinks</a></li></ul>
+    </nav>
+    <nav aria-label="About">
+      <h2 class="eyebrow">About</h2>
+      <ul><li><a href="about.html">My story</a></li><li><a href="contact.html">Work with me</a></li><li><a href="contact.html">Contact</a></li><li><a href="shop.html">Shop</a></li></ul>
+    </nav>
+    <nav aria-label="Follow">
+      <h2 class="eyebrow">Follow</h2>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li><li><a href="#">YouTube</a></li><li><a href="#newsletter">Newsletter</a></li></ul>
+    </nav>
+  </div>
+  <div class="container foot__base">
+    <p>© 2026 Pinch of Salt. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=caf6a4d9"></script>
+</body>
+</html>

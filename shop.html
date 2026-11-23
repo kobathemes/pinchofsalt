@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shop · Pinch of Salt</title>
+<meta name="description" content="Cookbooks, meal plans and printables from Pinch of Salt. Instant download.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css?v=caf6a4d9">
+</head>
+<body class="page-shop">
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Announcement bar (optional, switch on or off) -->
+<div class="announce">
+  <p>New here? Start with the <a href="recipes.html">5 recipes readers cook most</a></p>
+</div>
+
+<!-- Top navigation -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__left">
+      <button class="icon-btn nav__burger" id="menuOpen" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <button class="icon-btn" id="searchOpen" aria-label="Search recipes">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+      </button>
+    </div>
+
+    <a class="nav__mini-logo" href="index.html" aria-label="Pinch of Salt home">Pinch of Salt</a>
+
+    <nav class="menu" id="menu" aria-label="Main menu">
+      <button class="icon-btn menu__close" id="menuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-sub">
+          <a href="recipes.html">Recipes <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
+          <ul class="sub">
+            <li><a href="recipes.html?cat=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?cat=mains">Mains</a></li>
+            <li><a href="recipes.html?cat=baking">Baking</a></li>
+            <li><a href="recipes.html">Recipe index</a></li>
+          </ul>
+        </li>
+        <li><a href="recipes.html?cat=lunch">Quick Lunch</a></li>
+        <li><a href="recipes.html?cat=desserts">Desserts</a></li>
+        <li><a href="recipes.html?cat=drinks">Drinks</a></li>
+        <li><a href="shop.html" aria-current="page">Shop</a></li>
+        <li class="menu__only-mobile"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="nav__right">
+      <a class="icon-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 20.5 12.2 11M9.3 13.2c-1-2.7.6-5.2 3.2-5.2 2.3 0 3.7 1.8 3.2 4-.5 2.2-2.3 3.3-3.9 2.3"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="m10.5 9.5 4 2.5-4 2.5z" fill="currentColor"/></svg></a>
+      <a class="icon-btn nav__mail" href="#newsletter" aria-label="Newsletter"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a>
+    </div>
+  </div>
+</header>
+
+<!-- Search overlay -->
+<div class="search" id="search" hidden>
+  <form class="search__box" role="search" action="recipes.html" method="get">
+    <label class="eyebrow" for="searchInput">What are you hungry for?</label>
+    <div class="search__row">
+      <input id="searchInput" name="q" type="search" placeholder="pancakes, pasta, something sweet" autocomplete="off">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+    </div>
+    <ul class="search__tags">
+      <li><a href="recipes.html?time=30">30 minute dinners</a></li>
+      <li><a href="recipes.html?cat=breakfast">breakfast</a></li>
+      <li><a href="recipes.html?cat=baking">baking</a></li>
+      <li><a href="recipes.html?cat=drinks">drinks</a></li>
+      <li><a href="recipes.html?cat=desserts">something sweet</a></li>
+    </ul>
+  </form>
+</div>
+
+<!-- Logo band -->
+<div class="brand brand--small">
+  <a class="brand__logo" href="index.html">Pinch of Salt</a>
+  <p class="brand__tag">simple food, a little bit fancy</p>
+</div>
+
+<main id="main">
+
+  <header class="page-head container">
+    <p class="eyebrow">The shop</p>
+    <h1>Cookbooks and <em>meal plans</em></h1>
+    <p class="lede">Everything is a digital download. Pay once, open it on any screen, and print it at home if you like paper.</p>
+  </header>
+
+  <section class="band band--tight">
+    <div class="split split--feature container">
+      <div class="split__img">
+        <span class="badge">Bestseller</span>
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1100&h=1000&q=75" alt="Plates of steak salad seen from above" width="1100" height="1000">
+      </div>
+      <div class="split__text">
+        <p class="eyebrow">Ebook · 42 recipes</p>
+        <h2 class="title">30 Minute <em>Dinners</em></h2>
+        <p>Six weeks of weeknight dinners with a shopping list for every week. Nothing takes longer than half an hour, and most of it is one pan.</p>
+        <ul class="ticks">
+          <li>42 tested recipes with a photo for each</li>
+          <li>6 weekly shopping lists you can print</li>
+          <li>Swaps for vegetarian and gluten free</li>
+        </ul>
+        <p class="price"><b>$12</b> <s>$18</s></p>
+        <button class="btn" type="button" data-cart>Add to cart</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="container store" aria-label="Products">
+    <div class="index__tools">
+      <div class="filters" role="group" aria-label="Filter products" id="shopCats">
+        <button class="is-active" data-cat="all">All</button>
+        <button data-cat="ebook">Ebooks</button>
+        <button data-cat="printable">Printables</button>
+        <button data-cat="bundle">Bundles</button>
+      </div>
+      <p class="index__count" id="cartCount" aria-live="polite">Your cart is empty</p>
+    </div>
+
+    <div class="grid" id="shopGrid">
+      <article class="pcard" data-cat="ebook">
+        <a class="pcard__img" href="#"><span class="badge">Sale</span><img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=800&q=75" alt="Plates of steak salad seen from above" width="800" height="800" loading="lazy"></a>
+        <p class="card__cat">Ebook</p>
+        <h3><a href="#">30 Minute Dinners</a></h3>
+        <p class="pcard__row"><span class="muted">42 recipes</span><span class="price"><b>$12</b> <s>$18</s></span></p>
+        <button class="btn btn--ghost" type="button" data-cart>Add to cart</button>
+      </article>
+      <article class="pcard" data-cat="ebook">
+        <a class="pcard__img" href="#"><img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=800&h=800&q=75" alt="A brunch table with bowls of fruit and granola" width="800" height="800" loading="lazy"></a>
+        <p class="card__cat">Ebook</p>
+        <h3><a href="#">The Brunch Edit</a></h3>
+        <p class="pcard__row"><span class="muted">25 recipes</span><span class="price"><b>$9</b></span></p>
+        <button class="btn btn--ghost" type="button" data-cart>Add to cart</button>
+      </article>
+      <article class="pcard" data-cat="printable">
+        <a class="pcard__img" href="#"><img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&h=800&q=75" alt="Fresh vegetables and salads laid out in trays" width="800" height="800" loading="lazy"></a>
+        <p class="card__cat">Printable</p>
+        <h3><a href="#">Meal Prep Planner</a></h3>
+        <p class="pcard__row"><span class="muted">4 weeks</span><span class="price"><b>$6</b></span></p>
+        <button class="btn btn--ghost" type="button" data-cart>Add to cart</button>
+      </article>
+      <article class="pcard" data-cat="ebook">
+        <a class="pcard__img" href="#"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&h=800&q=75" alt="A slice of layer cake with raspberries" width="800" height="800" loading="lazy"></a>
+        <p class="card__cat">Ebook</p>
+        <h3><a href="#">Weekend Baking</a></h3>
+        <p class="pcard__row"><span class="muted">30 recipes</span><span class="price"><b>$10</b></span></p>
+        <button class="btn btn--ghost" type="button" data-cart>Add to cart</button>
+      </article>
+      <article class="pcard" data-cat="printable">
+        <a class="pcard__img" href="#"><img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=800&h=800&q=75" alt="Vegetables, eggs and a knife on a chopping board" width="800" height="800" loading="lazy"></a>
+        <p class="card__cat">Printable</p>
+        <h3><a href="#">Pantry Staples Checklist</a></h3>
+        <p class="pcard__row"><span class="muted">2 pages</span><span class="price"><b>$3</b></span></p>
+        <button class="btn btn--ghost" type="button" data-cart>Add to cart</button>
+      </article>
+      <article class="pcard" data-cat="bundle">
+        <a class="pcard__img" href="#"><span class="badge">Save $8</span><img src="https://images.unsplash.com/photo-1476224203421-9ac39bcb3327?auto=format&fit=crop&w=800&h=800&q=75" alt="A sharing platter with a bowl of dip" width="800" height="800" loading="lazy"></a>
+        <p class="card__cat">Bundle</p>
+        <h3><a href="#">The Whole Kitchen Bundle</a></h3>
+        <p class="pcard__row"><span class="muted">3 ebooks + planner</span><span class="price"><b>$29</b> <s>$37</s></span></p>
+        <button class="btn btn--ghost" type="button" data-cart>Add to cart</button>
+      </article>
+    </div>
+  </section>
+
+  <section class="container">
+    <ul class="perks">
+      <li><h3>Instant download</h3><p>Your link arrives by email the moment you pay.</p></li>
+      <li><h3>Print at home</h3><p>Every page is laid out for A4 and US Letter.</p></li>
+      <li><h3>Yours to keep</h3><p>Download again any time, on any device.</p></li>
+    </ul>
+  </section>
+
+    <!-- Newsletter -->
+  <section class="news news--ink" id="newsletter" aria-labelledby="newsTitle">
+    <div class="container news__inner">
+      <p class="kicker">A little something for Sunday</p>
+      <h2 class="title" id="newsTitle">One new recipe a week. <em>That's it.</em></h2>
+      <p>Join 12,000 home cooks. You get one tested recipe every Sunday morning, plus the shopping list.</p>
+      <form class="news__form" action="#" data-thanks="You're in. See you on Sunday.">
+        <label class="sr-only" for="email">Your email</label>
+        <input id="email" type="email" placeholder="your email" required>
+        <button class="btn" type="submit">Send me recipes</button>
+      </form>
+      <small>No spam. Unsubscribe any time.</small>
+    </div>
+  </section>
+
+
+</main>
+
+<footer class="foot">
+  <div class="container foot__inner">
+    <div class="foot__brand">
+      <a class="foot__logo" href="index.html">Pinch of Salt</a>
+      <p>Simple food, a little bit fancy. Tested in a small kitchen and written for busy people.</p>
+    </div>
+    <nav aria-label="Recipes">
+      <h2 class="eyebrow">Recipes</h2>
+      <ul><li><a href="recipes.html?cat=mains">Mains</a></li><li><a href="recipes.html?cat=lunch">Quick Lunch</a></li><li><a href="recipes.html?cat=desserts">Desserts</a></li><li><a href="recipes.html?cat=drinks">Drinks</a></li></ul>
+    </nav>
+    <nav aria-label="About">
+      <h2 class="eyebrow">About</h2>
+      <ul><li><a href="about.html">My story</a></li><li><a href="contact.html">Work with me</a></li><li><a href="contact.html">Contact</a></li><li><a href="shop.html">Shop</a></li></ul>
+    </nav>
+    <nav aria-label="Follow">
+      <h2 class="eyebrow">Follow</h2>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li><li><a href="#">YouTube</a></li><li><a href="#newsletter">Newsletter</a></li></ul>
+    </nav>
+  </div>
+  <div class="container foot__base">
+    <p>© 2026 Pinch of Salt. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
+
+<script src="assets/js/main.js?v=caf6a4d9"></script>
+</body>
+</html>
