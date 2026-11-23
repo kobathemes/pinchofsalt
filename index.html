@@ -1,154 +1,360 @@
-BLUE PLATE · ETSY LISTING COPY
-KOBA Themes · version 1.0.0
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pinch of Salt · simple food, a little bit fancy</title>
+<meta name="description" content="Pinch of Salt is a food blog theme for WordPress. Easy recipes, big photos, and a clean modern look.">
+<link rel="stylesheet" href="assets/css/fonts.css">
+<link rel="stylesheet" href="assets/css/style.css?v=caf6a4d9">
+</head>
+<body class="page-index">
 
-Copy each block into the matching Etsy field. Everything here describes
-what the theme does today. Lines marked [YOUR CALL] are yours to decide.
+<a class="skip-link" href="#main">Skip to content</a>
 
+<!-- Announcement bar (optional, switch on or off) -->
+<div class="announce">
+  <p>New here? Start with the <a href="recipes.html">5 recipes readers cook most</a></p>
+</div>
 
-============================================================
-TITLE  (Etsy limit: 140 characters)
-============================================================
+<!-- Top navigation -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <div class="nav__left">
+      <button class="icon-btn nav__burger" id="menuOpen" aria-label="Open menu" aria-controls="menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+      </button>
+      <button class="icon-btn" id="searchOpen" aria-label="Search recipes">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg>
+      </button>
+    </div>
 
-Colorful Food Blog WordPress Theme Blue Plate | Kadence Child Theme for Recipe Bloggers | Recipe Card, Recipe Index and Shop | Easy Setup
+    <a class="nav__mini-logo" href="index.html" aria-label="Pinch of Salt home">Pinch of Salt</a>
 
-Two shorter options:
+    <nav class="menu" id="menu" aria-label="Main menu">
+      <button class="icon-btn menu__close" id="menuClose" aria-label="Close menu">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+      <ul>
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="has-sub">
+          <a href="recipes.html">Recipes <svg class="chev" viewBox="0 0 12 12" aria-hidden="true"><path d="m2.5 4.5 3.5 3.5 3.5-3.5"/></svg></a>
+          <ul class="sub">
+            <li><a href="recipes.html?cat=breakfast">Breakfast</a></li>
+            <li><a href="recipes.html?cat=mains">Mains</a></li>
+            <li><a href="recipes.html?cat=baking">Baking</a></li>
+            <li><a href="recipes.html">Recipe index</a></li>
+          </ul>
+        </li>
+        <li><a href="recipes.html?cat=lunch">Quick Lunch</a></li>
+        <li><a href="recipes.html?cat=desserts">Desserts</a></li>
+        <li><a href="recipes.html?cat=drinks">Drinks</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li class="menu__only-mobile"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
-Blue Plate Colorful Food Blog WordPress Theme | Playful Recipe Website Template for Kadence
+    <div class="nav__right">
+      <a class="icon-btn" href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r=".6" fill="currentColor"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="Pinterest"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M10 20.5 12.2 11M9.3 13.2c-1-2.7.6-5.2 3.2-5.2 2.3 0 3.7 1.8 3.2 4-.5 2.2-2.3 3.3-3.9 2.3"/></svg></a>
+      <a class="icon-btn" href="#" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="6" width="19" height="12" rx="3.5"/><path d="m10.5 9.5 4 2.5-4 2.5z" fill="currentColor"/></svg></a>
+      <a class="icon-btn nav__mail" href="#newsletter" aria-label="Newsletter"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5.5" width="18" height="13" rx="2"/><path d="m3.5 7 8.5 6 8.5-6"/></svg></a>
+    </div>
+  </div>
+</header>
 
-Retro Food Blog WordPress Theme | Blue Plate Recipe Blog Template with Recipe Card and Shop
+<!-- Search overlay -->
+<div class="search" id="search" hidden>
+  <form class="search__box" role="search" action="recipes.html" method="get">
+    <label class="eyebrow" for="searchInput">What are you hungry for?</label>
+    <div class="search__row">
+      <input id="searchInput" name="q" type="search" placeholder="pancakes, pasta, something sweet" autocomplete="off">
+      <button type="button" class="icon-btn" id="searchClose" aria-label="Close search">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19"/></svg>
+      </button>
+    </div>
+    <ul class="search__tags">
+      <li><a href="recipes.html?time=30">30 minute dinners</a></li>
+      <li><a href="recipes.html?cat=breakfast">breakfast</a></li>
+      <li><a href="recipes.html?cat=baking">baking</a></li>
+      <li><a href="recipes.html?cat=drinks">drinks</a></li>
+      <li><a href="recipes.html?cat=desserts">something sweet</a></li>
+    </ul>
+  </form>
+</div>
 
+<!-- Logo band -->
+<div class="brand ">
+  <a class="brand__logo" href="index.html">Pinch of Salt</a>
+  <p class="brand__tag">simple food, a little bit fancy</p>
+</div>
 
-============================================================
-TAGS  (13 tags, 20 characters each at most)
-============================================================
+<main id="main">
 
-food blog theme
-wordpress theme
-kadence child theme
-recipe blog theme
-colorful wordpress
-food blogger website
-recipe website
-playful blog theme
-retro food blog
-wordpress food blog
-recipe card template
-blue website theme
-cooking blog theme
+  <!-- Featured posts: three tall blocks in a row, with arrows to bring in more.
+       In WordPress this shows the posts you mark as featured. -->
+  <section class="carousel container" data-carousel aria-roledescription="carousel" aria-label="Featured recipes">
+    <div class="carousel__track" tabindex="0">
+      <a class="feature" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?auto=format&fit=crop&w=900&h=1160&q=75" alt="Lemon meringue tart with a slice taken out" width="900" height="1160">
+        <div class="feature__text">
+          <span class="feature__cat">desserts</span>
+          <h2>Lemon Meringue Tart for Slow Sundays</h2>
+          <span class="feature__meta">1 hr 10 min · makes 8 slices</span>
+        </div>
+      </a>
+      <a class="feature" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1497534446932-c925b458314e?auto=format&fit=crop&w=900&h=1160&q=75" alt="Three glasses of strawberry lemonade with lime" width="900" height="1160">
+        <div class="feature__text">
+          <span class="feature__cat">drinks</span>
+          <h2>Strawberry Basil Lemonade</h2>
+          <span class="feature__meta">10 min · serves 4</span>
+        </div>
+      </a>
+      <a class="feature" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=900&h=1160&q=75" alt="A pan of tagliatelle with herbs" width="900" height="1160">
+        <div class="feature__text">
+          <span class="feature__cat">mains</span>
+          <h2>Brown Butter Tagliatelle</h2>
+          <span class="feature__meta">25 min · serves 2</span>
+        </div>
+      </a>
+      <a class="feature" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=900&h=1160&q=75" alt="French toast stacked with berries and banana" width="900" height="1160" loading="lazy">
+        <div class="feature__text">
+          <span class="feature__cat">breakfast</span>
+          <h2>Berries and Cream French Toast</h2>
+          <span class="feature__meta">20 min · serves 2</span>
+        </div>
+      </a>
+      <a class="feature" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&h=1160&q=75" alt="Rustic loaves of dark seeded bread" width="900" height="1160" loading="lazy">
+        <div class="feature__text">
+          <span class="feature__cat">baking</span>
+          <h2>Seeded Rye Loaf</h2>
+          <span class="feature__meta">3 hr · makes 1 loaf</span>
+        </div>
+      </a>
+      <a class="feature" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=900&h=1160&q=75" alt="A green salad on a dark plate with a glass of juice" width="900" height="1160" loading="lazy">
+        <div class="feature__text">
+          <span class="feature__cat">quick lunch</span>
+          <h2>Crunchy Green Lunch Salad</h2>
+          <span class="feature__meta">15 min · serves 2</span>
+        </div>
+      </a>
+    </div>
+    <button class="carousel__arrow carousel__arrow--prev" type="button" data-prev aria-label="Previous recipes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 5 7.5 12l7 7"/></svg></button>
+    <button class="carousel__arrow carousel__arrow--next" type="button" data-next aria-label="More recipes"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 5 7 7-7 7"/></svg></button>
+  </section>
 
+  <!-- Browse by category -->
+  <section class="cats container" aria-labelledby="catsTitle">
+    <h2 class="eyebrow center" id="catsTitle">Browse by craving</h2>
+    <ul class="cats__list">
+      <li><a href="recipes.html?cat=mains"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=320&h=320&q=70" alt="" width="320" height="320" loading="lazy"><span>Mains</span></a></li>
+      <li><a href="recipes.html?cat=lunch"><img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=320&h=320&q=70" alt="" width="320" height="320" loading="lazy"><span>Quick Lunch</span></a></li>
+      <li><a href="recipes.html?cat=desserts"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=320&h=320&q=70" alt="" width="320" height="320" loading="lazy"><span>Desserts</span></a></li>
+      <li><a href="recipes.html?cat=drinks"><img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=320&h=320&q=70" alt="" width="320" height="320" loading="lazy"><span>Drinks</span></a></li>
+      <li><a href="recipes.html?cat=breakfast"><img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=320&h=320&q=70" alt="" width="320" height="320" loading="lazy"><span>Breakfast</span></a></li>
+      <li><a href="recipes.html?cat=baking"><img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=320&h=320&q=70" alt="" width="320" height="320" loading="lazy"><span>Baking</span></a></li>
+    </ul>
+  </section>
 
-============================================================
-DESCRIPTION
-============================================================
+  <!-- About strip -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__photo">
+        <img src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?auto=format&fit=crop&w=900&h=1000&q=75" alt="Hands chopping fresh vegetables on a wooden board" width="900" height="1000" loading="lazy">
+      </div>
+      <div class="about__text">
+        <p class="script">hello, I'm Mia</p>
+        <h2>I cook real dinners in a small kitchen, and I write down what works.</h2>
+        <p>Every recipe here is tested at least three times, uses things you can find in a normal shop, and tells you honestly how long it takes. No fuss. Just food you will want to make again.</p>
+        <a class="btn" href="about.html">More about me</a>
+      </div>
+    </div>
+  </section>
 
-Blue Plate is a bright, playful WordPress theme for food bloggers. Cobalt blue, tangerine and butter yellow, arched photos, wavy edges and little spinning badges make your recipes impossible to scroll past. Your readers get a recipe card they can scale and print, and an index that makes every dish easy to find. You install it, press one button, and the whole demo site appears. No code.
+  <!-- Latest recipes -->
+  <section class="latest container" id="latest" aria-labelledby="latestTitle">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Fresh from the kitchen</p>
+        <h2 class="title" id="latestTitle">The latest <em>recipes</em></h2>
+      </div>
+      <div class="filters" role="group" aria-label="Filter recipes">
+        <button class="is-active" data-filter="all">All</button>
+        <button data-filter="breakfast">Breakfast</button>
+        <button data-filter="mains">Mains</button>
+        <button data-filter="lunch">Quick Lunch</button>
+        <button data-filter="sweet">Sweet</button>
+      </div>
+    </div>
 
-It is a child theme for Kadence, a free WordPress theme. Kadence does the heavy lifting. Blue Plate adds the design.
+    <div class="grid" id="grid">
+      <article class="card" data-cat="breakfast">
+        <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&h=1000&q=75" alt="Stack of pancakes with blueberries and banana" width="800" height="1000" loading="lazy"><span class="card__time">20 min</span></a>
+        <p class="card__cat">Breakfast</p>
+        <h3><a href="recipe.html">Blueberry Banana Pancakes</a></h3>
+        <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(128)</span></p>
+      </article>
+      <article class="card" data-cat="lunch">
+        <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&h=1000&q=75" alt="Colourful salad bowl with avocado and chickpeas" width="800" height="1000" loading="lazy"><span class="card__time">15 min</span></a>
+        <p class="card__cat">Quick Lunch</p>
+        <h3><a href="recipe.html">Rainbow Crunch Salad Bowl</a></h3>
+        <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(96)</span></p>
+      </article>
+      <article class="card" data-cat="mains">
+        <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=800&h=1000&q=75" alt="Sliced pizza on a wooden board" width="800" height="1000" loading="lazy"><span class="card__time">35 min</span></a>
+        <p class="card__cat">Mains</p>
+        <h3><a href="recipe.html">Friday Night Skillet Pizza</a></h3>
+        <p class="card__meta"><span class="stars" aria-label="Rated 4.9 out of 5">★★★★★</span> 4.9 <span class="muted">(214)</span></p>
+      </article>
+      <article class="card" data-cat="sweet">
+        <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=800&h=1000&q=75" alt="Chocolate chip cookies on baking paper" width="800" height="1000" loading="lazy"><span class="card__time">25 min</span></a>
+        <p class="card__cat">Baking</p>
+        <h3><a href="recipe.html">Brown Butter Chocolate Chip Cookies</a></h3>
+        <p class="card__meta"><span class="stars" aria-label="Rated 5 out of 5">★★★★★</span> 5.0 <span class="muted">(302)</span></p>
+      </article>
+      <article class="card" data-cat="mains">
+        <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=800&h=1000&q=75" alt="Grilled skewers on a tray with dips" width="800" height="1000" loading="lazy"><span class="card__time">30 min</span></a>
+        <p class="card__cat">Mains</p>
+        <h3><a href="recipe.html">Smoky Grilled Chicken Skewers</a></h3>
+        <p class="card__meta"><span class="stars" aria-label="Rated 4.7 out of 5">★★★★★</span> 4.7 <span class="muted">(74)</span></p>
+      </article>
+      <article class="card" data-cat="sweet">
+        <a class="card__img" href="recipe.html"><img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=800&h=1000&q=75" alt="Jars of panna cotta topped with strawberries" width="800" height="1000" loading="lazy"><span class="card__time">15 min + chill</span></a>
+        <p class="card__cat">Desserts</p>
+        <h3><a href="recipe.html">Strawberry Vanilla Panna Cotta</a></h3>
+        <p class="card__meta"><span class="stars" aria-label="Rated 4.8 out of 5">★★★★★</span> 4.8 <span class="muted">(59)</span></p>
+      </article>
+    </div>
 
+    <p class="center"><a class="btn btn--ghost" href="recipes.html">See all recipes</a></p>
+  </section>
 
-DESIGN FEATURES
+  <!-- Video feature -->
+  <section class="video" aria-labelledby="videoTitle">
+    <div class="container video__inner">
+      <a class="video__main" href="recipe.html">
+        <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?auto=format&fit=crop&w=1400&h=900&q=75" alt="Syrup being poured over a tall stack of pancakes" width="1400" height="900" loading="lazy">
+        <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5.500v13l11-6.500z"/></svg></span>
+        <span class="video__len">4:12</span>
+      </a>
+      <div class="video__side">
+        <p class="eyebrow">Watch and cook</p>
+        <h2 class="title" id="videoTitle">The fluffiest pancake stack, <em>step by step</em></h2>
+        <p>One bowl, six ingredients, and the trick that keeps them tall. Press play and cook along.</p>
+        <ul class="video__list">
+          <li><a href="recipe.html"><img src="https://images.unsplash.com/photo-1466637574441-749b8f19452f?auto=format&fit=crop&w=240&h=160&q=70" alt="" width="240" height="160" loading="lazy"><span><b>Knife skills in five minutes</b><small>5:03</small></span></a></li>
+          <li><a href="recipe.html"><img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=240&h=160&q=70" alt="" width="240" height="160" loading="lazy"><span><b>Lunch in a jar, three ways</b><small>6:40</small></span></a></li>
+        </ul>
+        <a class="link" href="recipes.html">All videos <span aria-hidden="true">→</span></a>
+      </div>
+    </div>
+  </section>
 
-• A cobalt logo band with your blog name in a chunky retro script, and a spinning "new recipes every Sunday" badge
-• A homepage built from nine sections: featured recipes row, category circles, a hello from you, latest recipes with filters, video feature, reader favourites, newsletter sign-up, a row from your shop and an Instagram row
-• 14 ready-made sections in total. Add, move, remove or repeat any of them on any page
-• Arched recipe photos, sticker labels, wavy section edges and playful hover effects
-• Change colors and fonts in the WordPress Customizer
-• Looks right on phones, tablets and desktops
-• Fonts are stored inside the theme, so your site does not load fonts from other websites
+  <!-- Reader favourites -->
+  <section class="favs container" aria-labelledby="favsTitle">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">Cooked again and again</p>
+        <h2 class="title" id="favsTitle">Reader <em>favourites</em></h2>
+      </div>
+    </div>
+    <ol class="favs__list">
+      <li><a href="recipe.html"><img src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=300&h=300&q=70" alt="" width="300" height="300" loading="lazy"><div><span class="card__cat">Quick Lunch</span><h3>Sun Dried Tomato Pasta Salad</h3><small>20 min</small></div></a></li>
+      <li><a href="recipe.html"><img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=300&h=300&q=70" alt="" width="300" height="300" loading="lazy"><div><span class="card__cat">Breakfast</span><h3>Soft Egg and Avocado Bowl</h3><small>15 min</small></div></a></li>
+      <li><a href="recipe.html"><img src="https://images.unsplash.com/photo-1481070555726-e2fe8357725c?auto=format&fit=crop&w=300&h=300&q=70" alt="" width="300" height="300" loading="lazy"><div><span class="card__cat">Mains</span><h3>Weeknight Smash Burger</h3><small>25 min</small></div></a></li>
+      <li><a href="recipe.html"><img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=300&h=300&q=70" alt="" width="300" height="300" loading="lazy"><div><span class="card__cat">Desserts</span><h3>Raspberry Vanilla Layer Cake</h3><small>1 hr 30 min</small></div></a></li>
+    </ol>
+  </section>
 
+  <!-- Newsletter -->
+  <section class="news" id="newsletter" aria-labelledby="newsTitle">
+    <div class="container news__inner">
+      <p class="kicker">A little something for Sunday</p>
+      <h2 class="title" id="newsTitle">One new recipe a week. <em>That's it.</em></h2>
+      <p>Join 12,000 home cooks. You get one tested recipe every Sunday morning, plus the shopping list.</p>
+      <form class="news__form" action="#" data-thanks="You're in. See you on Sunday.">
+        <label class="sr-only" for="email">Your email</label>
+        <input id="email" type="email" placeholder="your email" required>
+        <button class="btn" type="submit">Send me recipes</button>
+      </form>
+      <small>No spam. Unsubscribe any time.</small>
+    </div>
+  </section>
 
-RECIPE FEATURES
+  <!-- Shop -->
+  <section class="shop container" id="shop" aria-labelledby="shopTitle">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow">From the shop</p>
+        <h2 class="title" id="shopTitle">Cookbooks and <em>meal plans</em></h2>
+      </div>
+      <a class="link" href="shop.html">Visit the shop <span aria-hidden="true">→</span></a>
+    </div>
+    <div class="shop__grid">
+      <a class="product" href="shop.html">
+        <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=800&h=800&q=75" alt="Plates of steak salad seen from above" width="800" height="800" loading="lazy">
+        <h3>30 Minute Dinners</h3>
+        <p><span class="muted">ebook, 42 recipes</span><b>$12</b></p>
+      </a>
+      <a class="product" href="shop.html">
+        <img src="https://images.unsplash.com/photo-1493770348161-369560ae357d?auto=format&fit=crop&w=800&h=800&q=75" alt="A brunch table with bowls of fruit and granola" width="800" height="800" loading="lazy">
+        <h3>The Brunch Edit</h3>
+        <p><span class="muted">ebook, 25 recipes</span><b>$9</b></p>
+      </a>
+      <a class="product" href="shop.html">
+        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=800&h=800&q=75" alt="Fresh vegetables and salads laid out in trays" width="800" height="800" loading="lazy">
+        <h3>Meal Prep Planner</h3>
+        <p><span class="muted">printable, 4 weeks</span><b>$6</b></p>
+      </a>
+    </div>
+  </section>
 
-• A recipe card with scale buttons (half, double, triple), tick boxes for ingredients and a print button
-• Prep time, cook time, servings and calories at a glance
-• A recipe index with filter buttons for your categories and a search box just for recipes
-• Cooking time on a little sticker on every recipe photo
-• The recipe card runs on the free WP Recipe Maker plugin, which also adds the recipe details Google reads
+  <!-- Instagram feed -->
+  <section class="insta" aria-labelledby="instaTitle">
+    <p class="center"><a class="insta__handle" id="instaTitle" href="#">@pinchofsalt</a></p>
+    <ul class="insta__grid">
+      <li><a href="#"><img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=500&h=500&q=70" alt="Instagram photo: salad on a dark plate" width="500" height="500" loading="lazy"></a></li>
+      <li><a href="#"><img src="https://images.unsplash.com/photo-1482049016688-2d3e1b311543?auto=format&fit=crop&w=500&h=500&q=70" alt="Instagram photo: eggs on greens" width="500" height="500" loading="lazy"></a></li>
+      <li><a href="#"><img src="https://images.unsplash.com/photo-1486427944299-d1955d23e34d?auto=format&fit=crop&w=500&h=500&q=70" alt="Instagram photo: frosted cupcakes" width="500" height="500" loading="lazy"></a></li>
+      <li><a href="#"><img src="https://images.unsplash.com/photo-1464306076886-da185f6a9d05?auto=format&fit=crop&w=500&h=500&q=70" alt="Instagram photo: salad plates on a white table" width="500" height="500" loading="lazy"></a></li>
+      <li><a href="#"><img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb?auto=format&fit=crop&w=500&h=500&q=70" alt="Instagram photo: chocolate sundae in a jar" width="500" height="500" loading="lazy"></a></li>
+      <li><a href="#"><img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=500&h=500&q=70" alt="Instagram photo: berry and feta salad" width="500" height="500" loading="lazy"></a></li>
+    </ul>
+  </section>
 
+</main>
 
-SHOP FEATURES (OPTIONAL)
+<footer class="foot">
+  <div class="container foot__inner">
+    <div class="foot__brand">
+      <a class="foot__logo" href="index.html">Pinch of Salt</a>
+      <p>Simple food, a little bit fancy. Tested in a small kitchen and written for busy people.</p>
+    </div>
+    <nav aria-label="Recipes">
+      <h2 class="eyebrow">Recipes</h2>
+      <ul><li><a href="recipes.html?cat=mains">Mains</a></li><li><a href="recipes.html?cat=lunch">Quick Lunch</a></li><li><a href="recipes.html?cat=desserts">Desserts</a></li><li><a href="recipes.html?cat=drinks">Drinks</a></li></ul>
+    </nav>
+    <nav aria-label="About">
+      <h2 class="eyebrow">About</h2>
+      <ul><li><a href="about.html">My story</a></li><li><a href="contact.html">Work with me</a></li><li><a href="contact.html">Contact</a></li><li><a href="shop.html">Shop</a></li></ul>
+    </nav>
+    <nav aria-label="Follow">
+      <h2 class="eyebrow">Follow</h2>
+      <ul><li><a href="#">Instagram</a></li><li><a href="#">Pinterest</a></li><li><a href="#">YouTube</a></li><li><a href="#newsletter">Newsletter</a></li></ul>
+    </nav>
+  </div>
+  <div class="container foot__base">
+    <p>© 2026 Pinch of Salt. All rights reserved.</p>
+    <p><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+  </div>
+</footer>
 
-• A shop page with category buttons, and product pages that match your blog
-• A "From the shop" row for your homepage
-• Made for ebooks, meal plans and printables
-• Runs on the free WooCommerce plugin. Skip it if you do not sell anything
-
-
-EASY SETUP
-
-• Install the free Kadence theme, upload Blue Plate, press one button
-• The button creates demo recipes, your Home, About, Contact and Recipes pages, the menus and the footer
-• An 11-page install guide walks you through every click, with a picture beside each step
-• A contact form is built in. No extra plugin needed
-• The newsletter section takes the form from your email tool (Flodesk, MailerLite, Kit and others)
-
-
-WHAT WILL YOU RECEIVE?
-
-• blue-plate.zip: the theme, ready to upload to WordPress
-• Install guide: an 11-page PDF
-• License and credits: a short text file
-
-This is a digital download. Nothing is shipped.
-
-
-WHAT YOU NEED
-
-• A self-hosted WordPress site. That means WordPress on your own hosting. On WordPress.com it works only on plans that let you upload themes
-• The Kadence theme (free)
-• Optional and free: WP Recipe Maker for recipe cards, WooCommerce for the shop
-
-Tested with WordPress 7.1 and Kadence 1.6.
-
-
-GOOD TO KNOW
-
-• The demo photos load onto your site during setup, so you can see the design. Please swap in your own photos before you launch
-• Hosting, a domain name and WordPress itself are not included
-• You can use the theme on your own sites and change anything in it
-
-
-NEED A HAND?
-
-Message us here on Etsy. Tell us your site address and add a screenshot of what you see. We are happy to help.
-
-KOBA Themes
-
-
-============================================================
-IMAGES  (upload in this order)
-============================================================
-
-01-hero.jpg            the thumbnail buyers see in search
-02-homepage.jpg        the full homepage
-03-recipe-card.jpg     the recipe card
-04-responsive.jpg      three phone views
-05-recipe-index.jpg    the recipe index
-06-shop.jpg            the shop
-07-setup.jpg           the three setup steps and the install guide
-08-make-it-yours.jpg   colors, fonts and sections
-09-pages.jpg           the six page designs
-10-reviews.jpg         five real reviews from your Etsy shop
-11-whats-included.jpg  files and requirements
-
-All eleven are square, 2800 x 2800 pixels, like the Pinch of Salt set.
-Etsy takes up to 20 photos per listing.
-
-VIDEO
-blue-plate-video.mp4      15 seconds, square, no sound. The homepage scrolls inside
-                          the laptop and the phone, then glides back up so it loops.
-
-
-============================================================
-[YOUR CALL]
-============================================================
-
-1. Price. Yours to set. Pinch of Salt and Blue Plate share the same features,
-   so the same price keeps your shop simple.
-
-2. Free installation. This copy does not promise it. If you offer it, add
-   this line under EASY SETUP:
-   • Want us to install it for you? Message us after your purchase. It is free
-
-3. The files to upload for buyers are in dist/blue-plate/etsy (three files,
-   uploaded one by one).
+<script src="assets/js/main.js?v=caf6a4d9"></script>
+</body>
+</html>
